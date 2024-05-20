@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand' , sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #c4502d;
+}
+
+.h2-judul {
+    color: #c4502d;
+    font-size: 200%;
+}
+
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #227a29;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color:  white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.profile header {
+    text-align: center;
+}
+
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    padding: 20px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 40px;
+    background-color: #227a29;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #2ea337;
+    padding: 5px;
+
+    position: sticky;
+    top: 0;
+}
+
+main {
+    padding: 20px;
+
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+header {
+    display: inline;
+}
+
+@media screen and (max-width: 1200px) {
+   main {
+    flex-flow: column nowrap;
+   }
+
+   main aside {
+    align-self: center;
+   }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
